@@ -18,7 +18,7 @@ export async function resizeImage(file: File, maxEdge = 1600): Promise<string> {
     canvas.height = Math.max(1, Math.round(image.naturalHeight * scale))
     const context = canvas.getContext('2d')
     if (!context) throw new Error('फ़ोटो तैयार नहीं हो पाई। ब्राउज़र दोबारा खोलिए।')
-    context.fillStyle = '#F6F8F6'
+    context.fillStyle = '#F6FBF9' // paper token
     context.fillRect(0, 0, canvas.width, canvas.height)
     context.drawImage(image, 0, 0, canvas.width, canvas.height)
     return canvas.toDataURL('image/jpeg', 0.82)

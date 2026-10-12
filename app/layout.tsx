@@ -41,7 +41,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
-  themeColor: '#0B3B38',
+  themeColor: '#0B3B38', // forest-900 token
   colorScheme: 'light',
 }
 
