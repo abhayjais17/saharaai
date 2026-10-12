@@ -5,7 +5,15 @@
 - [x] T1 Home
 - [x] R1 Responsive layout + professional visual upgrade
 - [x] Phase 0: Audit and stabilize (2026-10-12)
-- [ ] Phase 1: Voice system (F3)
+- [~] Phase 1: Voice system (F3) - IN PROGRESS
+  - [x] MicButton component (hero/compact sizes)
+  - [x] SpeakButton component (with waveform animation)
+  - [x] AudioToggle component
+  - [x] TopBar component (for inner screens)
+  - [x] useVoiceCommands hook (done/back/repeat in EN/HI)
+  - [ ] ListeningSheet component (live transcript + waveform)
+  - [ ] Wire voice flow on Home page
+  - [ ] Intent routing to /form, /message, /website
 - [ ] Phase 2: Form capture and scanning (F1, first half)
 - [ ] Phase 3: Guided steps with highlighter (F1, second half)
 - [ ] Phase 4: Message and bill explainer (F2 UI)
