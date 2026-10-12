@@ -68,6 +68,14 @@ const en = {
   'api.invalidResponse': 'The reply was incomplete. Please try again.',
   'api.timeout': 'The reply is taking too long. Please try again.',
   'api.network': 'We could not connect. Check your internet and try again.',
+  'voice.heard': 'I heard:',
+  'voice.correct': "That's right",
+  'voice.again': 'Speak again',
+  'voice.stop': 'Stop',
+  'voice.unsupported': 'Speaking is not supported on this phone. Please type instead.',
+  'voice.denied': 'Microphone permission was not granted. Turn on the mic in your phone settings, or type instead.',
+  'voice.unknown': "I didn't understand. You can say \"scan a form\" or \"explain a message\".",
+  'voice.noSpeech': 'I could not hear anything. Please try again.',
 } as const
 
 export type TranslationKey = keyof typeof en
@@ -140,6 +148,14 @@ const hi: Record<TranslationKey, string> = {
   'api.invalidResponse': 'जवाब पूरा नहीं मिला। फिर से कोशिश कीजिए।',
   'api.timeout': 'जवाब आने में समय लग रहा है। फिर से कोशिश कीजिए।',
   'api.network': 'इंटरनेट नहीं जुड़ पाया। कनेक्शन देखकर फिर कोशिश कीजिए।',
+  'voice.heard': 'मैंने सुना:',
+  'voice.correct': 'सही है',
+  'voice.again': 'फिर से बोलिए',
+  'voice.stop': 'रुकिए',
+  'voice.unsupported': 'इस फ़ोन में बोलकर बताना काम नहीं करता। कृपया लिखकर बताइए।',
+  'voice.denied': 'माइक की अनुमति नहीं मिली। फ़ोन की सेटिंग में माइक चालू कीजिए, या लिखकर बताइए।',
+  'voice.unknown': 'मैं समझ नहीं पाया। आप कह सकते हैं: "फ़ॉर्म स्कैन करो" या "मैसेज समझाओ"।',
+  'voice.noSpeech': 'मुझे कुछ सुनाई नहीं दिया। फिर से कोशिश कीजिए।',
 }
 
 export const dictionary = { en, hi } satisfies Record<Language, Record<TranslationKey, string>>
